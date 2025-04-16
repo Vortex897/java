@@ -1,0 +1,19 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		System.out.println("Type the first number:");
+		Scanner in = new Scanner(System.in);
+		int a = in.nextInt();
+		
+		System.out.println("Type the second number:");
+		int b = in.nextInt();
+		
+		int c = a + b;
+		
+		System.out.println(c);
+
+	}
+}
