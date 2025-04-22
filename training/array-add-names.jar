@@ -1,0 +1,29 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		
+		String option = "";
+		String name = "";
+		
+		ArrayList<String> names = new ArrayList<>();
+		
+		Scanner in = new Scanner(System.in);
+		
+		while (!option.equals("sair")) {
+			System.out.println("Type a name to add to array: ");
+			option = in.next();
+			
+			if (!option.equals("sair")) {
+				name = option;
+				names.add(name);
+			}
+		}
+		for (int i = 0; i < names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+	}
+} 
