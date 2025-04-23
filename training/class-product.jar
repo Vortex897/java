@@ -1,0 +1,24 @@
+package main;
+
+
+
+public class Main {
+	public static class Product {
+		String name;
+		double price;
+		int amount;
+		
+		void totalStock() {
+			System.out.println("Product: " + name);
+			System.out.println("In stock: " + amount);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Product p = new Product();
+		p.name = "hammer";
+		p.price = 25.90;
+		p.amount = 76;
+		p.totalStock();
+	}
+}
